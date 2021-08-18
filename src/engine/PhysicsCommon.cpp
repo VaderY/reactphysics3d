@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/PhysicsCommon.h>
+#include <rp3d/engine/PhysicsCommon.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static variables
 Logger* PhysicsCommon::mLogger = nullptr;

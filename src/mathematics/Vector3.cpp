@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/mathematics/Vector3.h>
+#include <rp3d/mathematics/Vector3.h>
 
 // Namespaces
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Return the corresponding unit vector
 Vector3 Vector3::getUnit() const {

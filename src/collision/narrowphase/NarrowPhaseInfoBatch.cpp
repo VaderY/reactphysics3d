@@ -24,13 +24,13 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
-#include <reactphysics3d/collision/ContactPointInfo.h>
-#include <reactphysics3d/collision/shapes/TriangleShape.h>
-#include <reactphysics3d/engine/OverlappingPairs.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/ContactPointInfo.h>
+#include <rp3d/collision/shapes/TriangleShape.h>
+#include <rp3d/engine/OverlappingPairs.h>
 #include <iostream>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 NarrowPhaseInfoBatch::NarrowPhaseInfoBatch(OverlappingPairs& overlappingPairs, MemoryAllocator& allocator)

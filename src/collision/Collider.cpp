@@ -24,14 +24,14 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/Collider.h>
-#include <reactphysics3d/utils/Logger.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/memory/MemoryManager.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/engine/PhysicsCommon.h>
+#include <rp3d/collision/Collider.h>
+#include <rp3d/utils/Logger.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/memory/MemoryManager.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/engine/PhysicsCommon.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 /**

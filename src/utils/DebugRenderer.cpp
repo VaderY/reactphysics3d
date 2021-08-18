@@ -24,20 +24,20 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/utils/DebugRenderer.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/utils/DebugRenderer.h>
+#include <rp3d/memory/MemoryManager.h>
 #include <cassert>
-#include <reactphysics3d/collision/shapes/ConvexMeshShape.h>
-#include <reactphysics3d/collision/shapes/ConcaveMeshShape.h>
-#include <reactphysics3d/collision/shapes/HeightFieldShape.h>
-#include <reactphysics3d/collision/shapes/BoxShape.h>
-#include <reactphysics3d/collision/shapes/SphereShape.h>
-#include <reactphysics3d/collision/shapes/CapsuleShape.h>
-#include <reactphysics3d/collision/Collider.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/containers/Pair.h>
+#include <rp3d/collision/shapes/ConvexMeshShape.h>
+#include <rp3d/collision/shapes/ConcaveMeshShape.h>
+#include <rp3d/collision/shapes/HeightFieldShape.h>
+#include <rp3d/collision/shapes/BoxShape.h>
+#include <rp3d/collision/shapes/SphereShape.h>
+#include <rp3d/collision/shapes/CapsuleShape.h>
+#include <rp3d/collision/Collider.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/containers/Pair.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 DebugRenderer::DebugRenderer(MemoryAllocator& allocator)

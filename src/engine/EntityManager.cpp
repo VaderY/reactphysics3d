@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/EntityManager.h>
-#include <reactphysics3d/engine/Entity.h>
+#include <rp3d/engine/EntityManager.h>
+#include <rp3d/engine/Entity.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 EntityManager::EntityManager(MemoryAllocator& allocator)

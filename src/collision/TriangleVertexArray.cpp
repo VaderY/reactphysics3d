@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/TriangleVertexArray.h>
-#include <reactphysics3d/mathematics/Vector3.h>
+#include <rp3d/collision/TriangleVertexArray.h>
+#include <rp3d/mathematics/Vector3.h>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor without vertices normals
 /// Note that your data will not be copied into the TriangleVertexArray and

@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/configuration.h>
-#include <reactphysics3d/collision/shapes/ConvexMeshShape.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
+#include <rp3d/configuration.h>
+#include <rp3d/collision/shapes/ConvexMeshShape.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/collision/RaycastInfo.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor to initialize with an array of 3D vertices.
 /// This method creates an internal copy of the input vertices.

@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/shapes/AABB.h>
-#include <reactphysics3d/configuration.h>
+#include <rp3d/collision/shapes/AABB.h>
+#include <rp3d/configuration.h>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 using namespace std;
 
 // Constructor

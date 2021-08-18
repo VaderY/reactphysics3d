@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/GJK/VoronoiSimplex.h>
-#include <reactphysics3d/mathematics/Vector2.h>
+#include <rp3d/collision/narrowphase/GJK/VoronoiSimplex.h>
+#include <rp3d/mathematics/Vector2.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 decimal VoronoiSimplex::epsilon = decimal(0.0001);
 

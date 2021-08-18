@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/PolygonVertexArray.h>
+#include <rp3d/collision/PolygonVertexArray.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 /// Note that your data will not be copied into the PolygonVertexArray and

@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/TriangleMesh.h>
+#include <rp3d/collision/TriangleMesh.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 TriangleMesh::TriangleMesh(MemoryAllocator& allocator) : mTriangleArrays(allocator) {

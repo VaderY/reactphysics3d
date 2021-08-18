@@ -24,19 +24,19 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/ContactSolverSystem.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/body/RigidBody.h>
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/engine/Island.h>
-#include <reactphysics3d/collision/Collider.h>
-#include <reactphysics3d/components/CollisionBodyComponents.h>
-#include <reactphysics3d/components/ColliderComponents.h>
-#include <reactphysics3d/collision/ContactManifold.h>
+#include <rp3d/systems/ContactSolverSystem.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/body/RigidBody.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/engine/Island.h>
+#include <rp3d/collision/Collider.h>
+#include <rp3d/components/CollisionBodyComponents.h>
+#include <rp3d/components/ColliderComponents.h>
+#include <rp3d/collision/ContactManifold.h>
 #include <algorithm>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 using namespace std;
 
 // Constants initialization

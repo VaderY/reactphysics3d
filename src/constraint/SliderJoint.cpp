@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/constraint/SliderJoint.h>
-#include <reactphysics3d/systems/ConstraintSolverSystem.h>
-#include <reactphysics3d/components/RigidBodyComponents.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/constraint/SliderJoint.h>
+#include <rp3d/systems/ConstraintSolverSystem.h>
+#include <rp3d/components/RigidBodyComponents.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static variables definition
 const decimal SliderJoint::BETA = decimal(0.2);

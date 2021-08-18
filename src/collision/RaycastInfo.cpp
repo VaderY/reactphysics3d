@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/decimal.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/collision/Collider.h>
+#include <rp3d/decimal.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/collision/Collider.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Ray cast test against a collider
 decimal RaycastTest::raycastAgainstShape(Collider* shape, const Ray& ray) {

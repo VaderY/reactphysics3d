@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/constraint/HingeJoint.h>
-#include <reactphysics3d/systems/ConstraintSolverSystem.h>
-#include <reactphysics3d/components/RigidBodyComponents.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/constraint/HingeJoint.h>
+#include <rp3d/systems/ConstraintSolverSystem.h>
+#include <rp3d/components/RigidBodyComponents.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 HingeJoint::HingeJoint(Entity entity, PhysicsWorld &world, const HingeJointInfo& jointInfo) : Joint(entity, world) {

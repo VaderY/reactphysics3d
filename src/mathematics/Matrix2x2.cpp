@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/mathematics/Matrix2x2.h>
+#include <rp3d/mathematics/Matrix2x2.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Return the inverse matrix
 Matrix2x2 Matrix2x2::getInverse(decimal determinant) const {

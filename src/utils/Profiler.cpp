@@ -28,11 +28,11 @@
 
 
 // Libraries
-#include <reactphysics3d/utils/Profiler.h>
+#include <rp3d/utils/Profiler.h>
 #include <string>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/memory/MemoryManager.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 ProfileNode::ProfileNode(const char* name, ProfileNode* parentNode)

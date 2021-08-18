@@ -24,13 +24,13 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/SphereVsConvexPolyhedronAlgorithm.h>
-#include <reactphysics3d/collision/narrowphase/GJK/GJKAlgorithm.h>
-#include <reactphysics3d/collision/narrowphase/SAT/SATAlgorithm.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/narrowphase/SphereVsConvexPolyhedronAlgorithm.h>
+#include <rp3d/collision/narrowphase/GJK/GJKAlgorithm.h>
+#include <rp3d/collision/narrowphase/SAT/SATAlgorithm.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Compute the narrow-phase collision detection between a sphere and a convex polyhedron
 // This technique is based on the "Robust Contact Creation for Physics Simulations" presentation

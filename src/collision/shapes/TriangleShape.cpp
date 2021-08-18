@@ -24,16 +24,16 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/shapes/TriangleShape.h>
-#include <reactphysics3d/collision/Collider.h>
-#include <reactphysics3d/mathematics/mathematics_functions.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/engine/PhysicsCommon.h>
-#include <reactphysics3d/configuration.h>
+#include <rp3d/collision/shapes/TriangleShape.h>
+#include <rp3d/collision/Collider.h>
+#include <rp3d/mathematics/mathematics_functions.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/engine/PhysicsCommon.h>
+#include <rp3d/configuration.h>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 
 // Constructor

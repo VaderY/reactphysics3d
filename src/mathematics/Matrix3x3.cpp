@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/mathematics/Matrix3x3.h>
+#include <rp3d/mathematics/Matrix3x3.h>
 
 // Namespaces
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Return the inverse matrix
 Matrix3x3 Matrix3x3::getInverse(decimal determinant) const {

@@ -24,20 +24,20 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/SAT/SATAlgorithm.h>
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/collision/PolyhedronMesh.h>
-#include <reactphysics3d/collision/shapes/CapsuleShape.h>
-#include <reactphysics3d/collision/shapes/SphereShape.h>
-#include <reactphysics3d/engine/OverlappingPairs.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
-#include <reactphysics3d/collision/shapes/TriangleShape.h>
-#include <reactphysics3d/configuration.h>
-#include <reactphysics3d/utils/Profiler.h>
+#include <rp3d/collision/narrowphase/SAT/SATAlgorithm.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/collision/PolyhedronMesh.h>
+#include <rp3d/collision/shapes/CapsuleShape.h>
+#include <rp3d/collision/shapes/SphereShape.h>
+#include <rp3d/engine/OverlappingPairs.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/shapes/TriangleShape.h>
+#include <rp3d/configuration.h>
+#include <rp3d/utils/Profiler.h>
 #include <cassert>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static variables initialization
 const decimal SATAlgorithm::SEPARATING_AXIS_RELATIVE_TOLERANCE = decimal(1.002);

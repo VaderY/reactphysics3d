@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/Island.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/engine/Island.h>
+#include <rp3d/memory/MemoryManager.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 Island::Island(uint nbMaxBodies, uint nbMaxContactManifolds, MemoryManager& memoryManager)

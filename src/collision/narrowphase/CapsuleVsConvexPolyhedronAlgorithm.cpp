@@ -24,17 +24,17 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/CapsuleVsConvexPolyhedronAlgorithm.h>
-#include <reactphysics3d/collision/narrowphase/SAT/SATAlgorithm.h>
-#include <reactphysics3d/collision/narrowphase/GJK/GJKAlgorithm.h>
-#include <reactphysics3d/collision/shapes/CapsuleShape.h>
-#include <reactphysics3d/collision/shapes/ConvexPolyhedronShape.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
-#include <reactphysics3d/collision/ContactPointInfo.h>
+#include <rp3d/collision/narrowphase/CapsuleVsConvexPolyhedronAlgorithm.h>
+#include <rp3d/collision/narrowphase/SAT/SATAlgorithm.h>
+#include <rp3d/collision/narrowphase/GJK/GJKAlgorithm.h>
+#include <rp3d/collision/shapes/CapsuleShape.h>
+#include <rp3d/collision/shapes/ConvexPolyhedronShape.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/ContactPointInfo.h>
 #include <cassert>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Compute the narrow-phase collision detection between a capsule and a polyhedron
 // This technique is based on the "Robust Contact Creation for Physics Simulations" presentation

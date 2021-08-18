@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/constraint/Joint.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/constraint/Joint.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 Joint::Joint(Entity entity, PhysicsWorld& world) :mEntity(entity), mWorld(world) {

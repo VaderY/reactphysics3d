@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/HalfEdgeStructure.h>
-#include <reactphysics3d/containers/Map.h>
-#include <reactphysics3d/containers/Pair.h>
-#include <reactphysics3d/containers/containers_common.h>
+#include <rp3d/collision/HalfEdgeStructure.h>
+#include <rp3d/containers/Map.h>
+#include <rp3d/containers/Pair.h>
+#include <rp3d/containers/containers_common.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Initialize the structure (when all vertices and faces have been added)
 void HalfEdgeStructure::init() {

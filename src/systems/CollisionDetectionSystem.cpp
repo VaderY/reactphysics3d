@@ -24,28 +24,28 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/CollisionDetectionSystem.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/collision/OverlapCallback.h>
-#include <reactphysics3d/collision/shapes/BoxShape.h>
-#include <reactphysics3d/collision/shapes/ConcaveShape.h>
-#include <reactphysics3d/collision/ContactManifoldInfo.h>
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/body/RigidBody.h>
-#include <reactphysics3d/configuration.h>
-#include <reactphysics3d/collision/CollisionCallback.h>
-#include <reactphysics3d/collision/OverlapCallback.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
-#include <reactphysics3d/collision/ContactManifold.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/engine/EventListener.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/containers/Pair.h>
+#include <rp3d/systems/CollisionDetectionSystem.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/collision/OverlapCallback.h>
+#include <rp3d/collision/shapes/BoxShape.h>
+#include <rp3d/collision/shapes/ConcaveShape.h>
+#include <rp3d/collision/ContactManifoldInfo.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/body/RigidBody.h>
+#include <rp3d/configuration.h>
+#include <rp3d/collision/CollisionCallback.h>
+#include <rp3d/collision/OverlapCallback.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/ContactManifold.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/engine/EventListener.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/containers/Pair.h>
 #include <cassert>
 #include <iostream>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 using namespace std;
 
 // Constructor

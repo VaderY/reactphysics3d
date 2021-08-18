@@ -24,15 +24,15 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/BroadPhaseSystem.h>
-#include <reactphysics3d/systems/CollisionDetectionSystem.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/memory/MemoryManager.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/systems/BroadPhaseSystem.h>
+#include <rp3d/systems/CollisionDetectionSystem.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/memory/MemoryManager.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 BroadPhaseSystem::BroadPhaseSystem(CollisionDetectionSystem& collisionDetection, ColliderComponents& collidersComponents,

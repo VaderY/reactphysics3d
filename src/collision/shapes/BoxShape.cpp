@@ -24,15 +24,15 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/shapes/BoxShape.h>
-#include <reactphysics3d/collision/Collider.h>
-#include <reactphysics3d/configuration.h>
-#include <reactphysics3d/engine/PhysicsCommon.h>
-#include <reactphysics3d/memory/MemoryManager.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
+#include <rp3d/collision/shapes/BoxShape.h>
+#include <rp3d/collision/Collider.h>
+#include <rp3d/configuration.h>
+#include <rp3d/engine/PhysicsCommon.h>
+#include <rp3d/memory/MemoryManager.h>
+#include <rp3d/collision/RaycastInfo.h>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 /**

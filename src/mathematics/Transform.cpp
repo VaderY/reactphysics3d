@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/mathematics/Transform.h>
-#include <reactphysics3d/mathematics/Matrix3x3.h>
+#include <rp3d/mathematics/Transform.h>
+#include <rp3d/mathematics/Matrix3x3.h>
 
 // Namespaces
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Set the transform from an OpenGL transform matrix
 void Transform::setFromOpenGL(decimal* openglMatrix) {

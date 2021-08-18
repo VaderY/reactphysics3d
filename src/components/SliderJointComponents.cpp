@@ -24,13 +24,13 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/components/SliderJointComponents.h>
-#include <reactphysics3d/engine/EntityManager.h>
-#include <reactphysics3d/mathematics/Matrix3x3.h>
+#include <rp3d/components/SliderJointComponents.h>
+#include <rp3d/engine/EntityManager.h>
+#include <rp3d/mathematics/Matrix3x3.h>
 #include <cassert>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 SliderJointComponents::SliderJointComponents(MemoryAllocator& allocator)

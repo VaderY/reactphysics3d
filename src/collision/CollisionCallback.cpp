@@ -24,22 +24,22 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/CollisionCallback.h>
-#include <reactphysics3d/collision/ContactPair.h>
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/collision/CollisionCallback.h>
+#include <rp3d/collision/ContactPair.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
-CollisionCallback::ContactPoint::ContactPoint(const reactphysics3d::ContactPoint& contactPoint) : mContactPoint(contactPoint) {
+CollisionCallback::ContactPoint::ContactPoint(const rp3d::ContactPoint& contactPoint) : mContactPoint(contactPoint) {
 
 }
 
 // Contact Pair Constructor
-CollisionCallback::ContactPair::ContactPair(const reactphysics3d::ContactPair& contactPair,
-                                            Array<reactphysics3d::ContactPoint>* contactPoints, PhysicsWorld& world, bool isLostContactPair)
+CollisionCallback::ContactPair::ContactPair(const rp3d::ContactPair& contactPair,
+                                            Array<rp3d::ContactPoint>* contactPoints, PhysicsWorld& world, bool isLostContactPair)
                                :mContactPair(contactPair), mContactPoints(contactPoints),
                                 mWorld(world), mIsLostContactPair(isLostContactPair) {
 
@@ -76,8 +76,8 @@ CollisionCallback::ContactPair::EventType CollisionCallback::ContactPair::getEve
 }
 
 // Constructor
-CollisionCallback::CallbackData::CallbackData(Array<reactphysics3d::ContactPair>* contactPairs, Array<ContactManifold>* manifolds,
-                                              Array<reactphysics3d::ContactPoint>* contactPoints, Array<reactphysics3d::ContactPair>& lostContactPairs, PhysicsWorld& world)
+CollisionCallback::CallbackData::CallbackData(Array<rp3d::ContactPair>* contactPairs, Array<ContactManifold>* manifolds,
+                                              Array<rp3d::ContactPoint>* contactPoints, Array<rp3d::ContactPair>& lostContactPairs, PhysicsWorld& world)
                       :mContactPairs(contactPairs), mContactManifolds(manifolds), mContactPoints(contactPoints), mLostContactPairs(lostContactPairs),
                        mContactPairsIndices(world.mMemoryManager.getHeapAllocator(), contactPairs->size()), mLostContactPairsIndices(world.mMemoryManager.getHeapAllocator(), lostContactPairs.size()),
                        mWorld(world) {

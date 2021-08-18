@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/memory/SingleFrameAllocator.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/memory/SingleFrameAllocator.h>
+#include <rp3d/memory/MemoryManager.h>
 #include <cstdlib>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 SingleFrameAllocator::SingleFrameAllocator(MemoryAllocator& baseAllocator) : mBaseAllocator(baseAllocator),

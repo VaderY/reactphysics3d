@@ -24,13 +24,13 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/ConstraintSolverSystem.h>
-#include <reactphysics3d/components/JointComponents.h>
-#include <reactphysics3d/components/BallAndSocketJointComponents.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/engine/Island.h>
+#include <rp3d/systems/ConstraintSolverSystem.h>
+#include <rp3d/components/JointComponents.h>
+#include <rp3d/components/BallAndSocketJointComponents.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/engine/Island.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 ConstraintSolverSystem::ConstraintSolverSystem(PhysicsWorld& world, Islands& islands, RigidBodyComponents& rigidBodyComponents,

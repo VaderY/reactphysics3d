@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/broadphase/DynamicAABBTree.h>
-#include <reactphysics3d/systems/BroadPhaseSystem.h>
-#include <reactphysics3d/containers/Stack.h>
-#include <reactphysics3d/utils/Profiler.h>
+#include <rp3d/collision/broadphase/DynamicAABBTree.h>
+#include <rp3d/systems/BroadPhaseSystem.h>
+#include <rp3d/containers/Stack.h>
+#include <rp3d/utils/Profiler.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Initialization of static variables
 const int32 TreeNode::NULL_TREE_NODE = -1;

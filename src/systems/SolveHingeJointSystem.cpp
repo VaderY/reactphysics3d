@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/SolveHingeJointSystem.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/body/RigidBody.h>
+#include <rp3d/systems/SolveHingeJointSystem.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/body/RigidBody.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static variables definition
 const decimal SolveHingeJointSystem::BETA = decimal(0.2);

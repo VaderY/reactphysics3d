@@ -24,14 +24,14 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/PolyhedronMesh.h>
-#include <reactphysics3d/memory/MemoryManager.h>
-#include <reactphysics3d/collision/PolygonVertexArray.h>
-#include <reactphysics3d/utils/DefaultLogger.h>
-#include <reactphysics3d/engine/PhysicsCommon.h>
+#include <rp3d/collision/PolyhedronMesh.h>
+#include <rp3d/memory/MemoryManager.h>
+#include <rp3d/collision/PolygonVertexArray.h>
+#include <rp3d/utils/DefaultLogger.h>
+#include <rp3d/engine/PhysicsCommon.h>
 #include <cstdlib>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 
 // Constructor
