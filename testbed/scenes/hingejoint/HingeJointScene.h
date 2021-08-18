@@ -1,6 +1,6 @@
 /********************************************************************************
 * ReactPhysics3D physics library, http://www.reactphysics3d.com                 *
-* Copyright (c) 2010-2020 Daniel Chappuis                                       *
+* Copyright (c) 2010-2016 Daniel Chappuis                                       *
 *********************************************************************************
 *                                                                               *
 * This software is provided 'as-is', without any express or implied warranty.   *
@@ -23,39 +23,59 @@
 *                                                                               *
 ********************************************************************************/
 
+#ifndef HINGE_JOINT_SCENE_H
+#define HINGE_JOINT_SCENE_H
+
 // Libraries
-#include <reactphysics3d/engine/Timer.h>
+#include "openglframework.h"
+#include <reactphysics3d/reactphysics3d.h>
+#include "Box.h"
+#include "SceneDemo.h"
 
-// We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+namespace hingejointscene {
 
-// Constructor
-Timer::Timer(double timeStep) : mTimeStep(timeStep), mLastUpdateTime(0), mDeltaTime(0), mIsRunning(false) {
-    assert(timeStep > 0.0);
+// Constants
+const float SCENE_RADIUS = 30.0f;
+const openglframework::Vector3 BOX_SIZE(2, 2, 2);           // Box dimensions in meters
+const openglframework::Vector3 FLOOR_SIZE(50, 0.5f, 50);    // Floor dimensions in meters
+const int NB_BALLSOCKETJOINT_BOXES = 7;                     // Number of Ball-And-Socket chain boxes
+const int NB_HINGE_BOXES = 7;                               // Number of Hinge chain boxes
+
+// Class HingeJointScene
+class HingeJointScene : public SceneDemo {
+
+    protected :
+
+        // -------------------- Attributes -------------------- //
+
+        /// First box
+        Box* mBox1;
+
+        /// Second box
+        Box* mBox2;
+
+        /// Hinge joint
+        rp3d::HingeJoint* mJoint;
+
+        // -------------------- Methods -------------------- //
+
+        /// Create the boxes and joint for the Hinge joint example
+        void createHingeJoint();
+
+    public:
+
+        // -------------------- Methods -------------------- //
+
+        /// Constructor
+        HingeJointScene(const std::string& name, EngineSettings& settings);
+
+        /// Destructor
+        virtual ~HingeJointScene() override ;
+
+        /// Reset the scene
+        virtual void reset() override;
+};
+
 }
 
-// Return the current time of the system in seconds
-long double Timer::getCurrentSystemTime() {
-
-    #if defined(WINDOWS_OS)
-        LARGE_INTEGER ticksPerSecond;
-        LARGE_INTEGER ticks;
-        QueryPerformanceFrequency(&ticksPerSecond);
-        QueryPerformanceCounter(&ticks);
-        return ((long double)(ticks.QuadPart) / (long double)(ticksPerSecond.QuadPart));
-    #else
-        // Initialize the lastUpdateTime with the current time in seconds
-        timeval timeValue;
-        gettimeofday(&timeValue, nullptr);
-        return (timeValue.tv_sec + (timeValue.tv_usec / 1000000.0));
-    #endif
-}
-
-
-
-
-
-
-
-
-
+#endif

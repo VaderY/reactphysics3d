@@ -124,12 +124,12 @@ void DebugRenderer::drawSphere(const Vector3& position, decimal radius, uint32 c
     Vector3 vertices[(NB_SECTORS_SPHERE + 1) * (NB_STACKS_SPHERE + 1) + (NB_SECTORS_SPHERE + 1)];
 	
 	// Vertices
-	const decimal sectorStep = 2 * PI / NB_SECTORS_SPHERE;
-	const decimal stackStep = PI / NB_STACKS_SPHERE;
+    const decimal sectorStep = 2 * PI_RP3D / NB_SECTORS_SPHERE;
+    const decimal stackStep = PI_RP3D / NB_STACKS_SPHERE;
 	
 	for (uint i = 0; i <= NB_STACKS_SPHERE; i++) {
 
-		const decimal stackAngle = PI / 2 - i * stackStep;
+        const decimal stackAngle = PI_RP3D / 2 - i * stackStep;
 		const decimal radiusCosStackAngle = radius * std::cos(stackAngle);
 		const decimal z = radius * std::sin(stackAngle);
 
@@ -178,15 +178,15 @@ void DebugRenderer::drawCapsule(const Transform& transform, decimal radius, deci
 	const uint nbHalfStacks = nbStacks / 2;
 	
 	// Vertices
-	const decimal sectorStep = 2 * PI / NB_SECTORS_SPHERE;
-	const decimal stackStep = PI / nbStacks;
+    const decimal sectorStep = 2 * PI_RP3D / NB_SECTORS_SPHERE;
+    const decimal stackStep = PI_RP3D / nbStacks;
 	
 	uint vertexIndex = 0;
 	
 	// Top cap sphere vertices
     for (uint i = 0; i <= nbHalfStacks; i++) {
 
-		const decimal stackAngle = PI / 2 - i * stackStep;
+        const decimal stackAngle = PI_RP3D / 2 - i * stackStep;
 		const decimal radiusCosStackAngle = radius * std::cos(stackAngle);
         const decimal y = radius * std::sin(stackAngle);
 
@@ -206,7 +206,7 @@ void DebugRenderer::drawCapsule(const Transform& transform, decimal radius, deci
 	// Bottom cap sphere vertices
     for (uint i = 0; i <= nbHalfStacks; i++) {
 
-        const decimal stackAngle = PI / 2 - (nbHalfStacks + i) * stackStep;
+        const decimal stackAngle = PI_RP3D / 2 - (nbHalfStacks + i) * stackStep;
 		const decimal radiusCosStackAngle = radius * std::cos(stackAngle);
         const decimal y = radius * std::sin(stackAngle);
 
@@ -267,6 +267,7 @@ void DebugRenderer::drawCapsule(const Transform& transform, decimal radius, deci
     for (uint i = 0; i < NB_SECTORS_SPHERE; i++, a1++, a2++) {
 
 		mTriangles.add(DebugTriangle(vertices[a1 + 1], vertices[a2], vertices[a2 + 1], color));
+		mTriangles.add(DebugTriangle(vertices[a1], vertices[a2], vertices[a1 + 1], color));
 	}
 }
 
@@ -280,7 +281,8 @@ void DebugRenderer::drawConvexMesh(const Transform& transform, const ConvexMeshS
 		assert(face.faceVertices.size() >= 3);
 
 		// Perform a fan triangulation of the convex polygon face
-		for (uint32 v = 2; v < face.faceVertices.size(); v++) {
+        const uint32 nbFaceVertices = face.faceVertices.size();
+        for (uint32 v = 2; v < nbFaceVertices; v++) {
 
 			uint v1Index = face.faceVertices[v - 2];
 			uint v2Index = face.faceVertices[v - 1];

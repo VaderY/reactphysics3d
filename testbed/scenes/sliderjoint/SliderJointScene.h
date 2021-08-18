@@ -23,42 +23,56 @@
 *                                                                               *
 ********************************************************************************/
 
+#ifndef SLIDER_JOINT_SCENE_H
+#define SLIDER_JOINT_SCENE_H
+
 // Libraries
-#include "Timer.h"
+#include "openglframework.h"
+#include <reactphysics3d/reactphysics3d.h>
+#include "Box.h"
+#include "SceneDemo.h"
 
+namespace sliderjointscene {
 
-// Constructor
-Timer::Timer() : mLastUpdateTime(0), mDeltaTime(0), mAccumulator(0), mIsRunning(false) {
+// Constants
+const float SCENE_RADIUS = 30.0f;
+const openglframework::Vector3 BOX_SIZE(2, 2, 2);           // Box dimensions in meters
+
+// Class SliderJointScene
+class SliderJointScene : public SceneDemo {
+
+    protected :
+
+        // -------------------- Attributes -------------------- //
+
+        /// First box
+        Box* mBox1;
+
+        /// Second box
+        Box* mBox2;
+
+        /// Slider joint
+        rp3d::SliderJoint* mJoint;
+
+        // -------------------- Methods -------------------- //
+
+        /// Create a slider joint
+        void createSliderJoint();
+
+    public:
+
+        // -------------------- Methods -------------------- //
+
+        /// Constructor
+        SliderJointScene(const std::string& name, EngineSettings& settings);
+
+        /// Destructor
+        virtual ~SliderJointScene() override ;
+
+        /// Reset the scene
+        virtual void reset() override;
+};
 
 }
 
-// Destructor
-Timer::~Timer() {
-
-}
-
-// Return the current time of the system in seconds
-long double Timer::getCurrentSystemTime() {
-
-    #if defined(WINDOWS_OS)
-        LARGE_INTEGER ticksPerSecond;
-        LARGE_INTEGER ticks;
-        QueryPerformanceFrequency(&ticksPerSecond);
-        QueryPerformanceCounter(&ticks);
-        return (long double(ticks.QuadPart) / long double(ticksPerSecond.QuadPart));
-    #else
-        // Initialize the lastUpdateTime with the current time in seconds
-        timeval timeValue;
-        gettimeofday(&timeValue, NULL);
-        return (timeValue.tv_sec + (timeValue.tv_usec / 1000000.0));
-    #endif
-}
-
-
-
-
-
-
-
-
-
+#endif

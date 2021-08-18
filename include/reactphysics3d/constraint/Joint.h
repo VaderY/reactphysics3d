@@ -62,7 +62,7 @@ struct JointInfo {
         JointType type;
 
         /// Position correction technique used for the constraint (used for joints).
-        /// By default, the BAUMGARTE technique is used
+        /// By default, the NON_LINEAR_GAUSS_SEIDEL technique is used
         JointsPositionCorrectionTechnique positionCorrectionTechnique;
 
         /// True if the two bodies of the joint are allowed to collide with each other
@@ -137,6 +137,12 @@ class Joint {
         /// Return the type of the constraint
         JointType getType() const;
 
+        /// Return the force (in Newtons) on body 2 required to satisfy the joint constraint
+        virtual Vector3 getReactionForce(decimal timeStep) const=0;
+
+        /// Return the torque (in Newtons * meters) on body 2 required to satisfy the joint constraint
+        virtual Vector3 getReactionTorque(decimal timeStep) const=0;
+
         /// Return true if the collision between the two bodies of the joint is enabled
         bool isCollisionEnabled() const;
 
@@ -157,7 +163,7 @@ class Joint {
 /**
  * @return The entity of the joint
  */
-inline Entity Joint::getEntity() const {
+RP3D_FORCE_INLINE Entity Joint::getEntity() const {
     return mEntity;
 }
 

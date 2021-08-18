@@ -43,8 +43,17 @@ struct BallAndSocketJointInfo : public JointInfo {
 
         // -------------------- Attributes -------------------- //
 
+        /// True if this object has been constructed using local-space anchors
+        bool isUsingLocalSpaceAnchors;
+
         /// Anchor point (in world-space coordinates)
         Vector3 anchorPointWorldSpace;
+
+        /// Anchor point on body 1 (in local-space coordinates)
+        Vector3 anchorPointBody1LocalSpace;
+
+        /// Anchor point on body 2 (in local-space coordinates)
+        Vector3 anchorPointBody2LocalSpace;
 
         /// Constructor
         /**
@@ -56,7 +65,23 @@ struct BallAndSocketJointInfo : public JointInfo {
         BallAndSocketJointInfo(RigidBody* rigidBody1, RigidBody* rigidBody2,
                                const Vector3& initAnchorPointWorldSpace)
                               : JointInfo(rigidBody1, rigidBody2, JointType::BALLSOCKETJOINT),
+                                isUsingLocalSpaceAnchors(false),
                                 anchorPointWorldSpace(initAnchorPointWorldSpace) {}
+
+        /// Constructor
+        /**
+         * @param rigidBody1 Pointer to the first body of the joint
+         * @param rigidBody2 Pointer to the second body of the joint
+         * @param anchorPointBody1LocalSpace The anchor point on body 1 in local-space coordinates
+         * @param anchorPointBody2LocalSpace The anchor point on body 2 in local-space coordinates
+         */
+        BallAndSocketJointInfo(RigidBody* rigidBody1, RigidBody* rigidBody2,
+                               const Vector3& anchorPointBody1LocalSpace,
+                               const Vector3& anchorPointBody2LocalSpace)
+                              : JointInfo(rigidBody1, rigidBody2, JointType::BALLSOCKETJOINT),
+                                isUsingLocalSpaceAnchors(true),
+                                anchorPointBody1LocalSpace(anchorPointBody1LocalSpace),
+                                anchorPointBody2LocalSpace(anchorPointBody2LocalSpace) {}
 };
 
 // Class BallAndSocketJoint
@@ -96,6 +121,33 @@ class BallAndSocketJoint : public Joint {
         /// Deleted copy-constructor
         BallAndSocketJoint(const BallAndSocketJoint& constraint) = delete;
 
+        /// Enable/disable the cone limit of the joint
+        void enableConeLimit(bool isLimitEnabled);
+
+        /// Return true if the cone limit or the joint is enabled
+        bool isConeLimitEnabled() const;
+
+        /// Set the cone limit half angle
+        void setConeLimitHalfAngle(decimal coneHalfAngle);
+
+        /// Set the normalized cone limit axis of body 1 in local-space of body 1
+        void setConeLimitLocalAxisBody1(const Vector3& localAxisBody1);
+
+        /// Set the normalized cone limit axis of body 2 in local-space of body 2
+        void setConeLimitLocalAxisBody2(const Vector3& localAxisBody2);
+
+        /// Return the cone limit half angle (in radians)
+        decimal getConeLimitHalfAngle() const;
+        
+        /// Return the current cone half angle (in radians)
+        decimal getConeHalfAngle() const;
+
+        /// Return the force (in Newtons) on body 2 required to satisfy the joint constraint in world-space
+        virtual Vector3 getReactionForce(decimal timeStep) const override;
+
+        /// Return the torque (in Newtons * meters) on body 2 required to satisfy the joint constraint in world-space
+        virtual Vector3 getReactionTorque(decimal timeStep) const override;
+
         /// Return a string representation
         virtual std::string to_string() const override;
 
@@ -104,7 +156,7 @@ class BallAndSocketJoint : public Joint {
 };
 
 // Return the number of bytes used by the joint
-inline size_t BallAndSocketJoint::getSizeInBytes() const {
+RP3D_FORCE_INLINE size_t BallAndSocketJoint::getSizeInBytes() const {
     return sizeof(BallAndSocketJoint);
 }
 

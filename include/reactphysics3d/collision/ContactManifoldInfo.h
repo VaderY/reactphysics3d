@@ -45,8 +45,11 @@ struct ContactManifoldInfo {
 
         // -------------------- Attributes -------------------- //
 
+        /// Memory allocator
+        MemoryAllocator& allocator;
+
         /// Indices of the contact points in the mPotentialContactPoints array
-        List<uint> potentialContactPointsIndices;
+        Array<uint> potentialContactPointsIndices;
 
         /// Overlapping pair id
         uint64 pairId;
@@ -55,7 +58,7 @@ struct ContactManifoldInfo {
 
         /// Constructor
         ContactManifoldInfo(uint64 pairId, MemoryAllocator& allocator)
-               : potentialContactPointsIndices(allocator), pairId(pairId) {
+            : allocator(allocator), potentialContactPointsIndices(allocator, 4), pairId(pairId) {
 
         }
 

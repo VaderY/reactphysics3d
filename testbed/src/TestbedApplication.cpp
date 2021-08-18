@@ -38,6 +38,16 @@
 #include "concavemesh/ConcaveMeshScene.h"
 #include "cubestack/CubeStackScene.h"
 #include "pile/PileScene.h"
+#include "boxtower/BoxTowerScene.h"
+#include "ballandsocketjointsnet/BallAndSocketJointsNetScene.h"
+#include "ballandsocketjointschain/BallAndSocketJointsChainScene.h"
+#include "hingejointschain/HingeJointsChainScene.h"
+#include "bridge/BridgeScene.h"
+#include "fixedjoint/FixedJointScene.h"
+#include "ballandsocketjoint/BallAndSocketJointScene.h"
+#include "hingejoint/HingeJointScene.h"
+#include "sliderjoint/SliderJointScene.h"
+#include "ragdoll/RagdollScene.h"
 
 using namespace openglframework;
 using namespace jointsscene;
@@ -49,6 +59,16 @@ using namespace heightfieldscene;
 using namespace collisiondetectionscene;
 using namespace cubestackscene;
 using namespace pilescene;
+using namespace boxtowerscene;
+using namespace ballandsocketjointsnetscene;
+using namespace ballandsocketjointschainscene;
+using namespace hingejointschainscene;
+using namespace bridgescene;
+using namespace fixedjointscene;
+using namespace ballandsocketjointscene;
+using namespace hingejointscene;
+using namespace sliderjointscene;
+using namespace ragdollscene;
 
 // Initialization of static variables
 const float TestbedApplication::SCROLL_SENSITIVITY = 0.08f;
@@ -146,6 +166,47 @@ void TestbedApplication::createScenes() {
     // Pile scene
     PileScene* pileScene = new PileScene("Pile", mEngineSettings);
     mScenes.push_back(pileScene);
+
+    // Box Tower scene
+    BoxTowerScene* boxTowerScene = new BoxTowerScene("Box Tower", mEngineSettings);
+    mScenes.push_back(boxTowerScene);
+
+    // Ball and Socket joints Net scene
+    BallAndSocketJointsNetScene* ballAndSocketJointsNetScene = new BallAndSocketJointsNetScene("BallAndSocket Joints Net", mEngineSettings);
+    mScenes.push_back(ballAndSocketJointsNetScene);
+
+    // Ball and Socket joints chain scene
+    BallAndSocketJointsChainScene* ballAndSocketJointsChainScene = new BallAndSocketJointsChainScene("BallAndSocket Joints Chain", mEngineSettings);
+    mScenes.push_back(ballAndSocketJointsChainScene);
+
+    // Hinge joints chain scene
+    HingeJointsChainScene* hingeJointsChainScene = new HingeJointsChainScene("Hinge Joints Chain", mEngineSettings);
+    mScenes.push_back(hingeJointsChainScene);
+
+    // Bridge scene
+    BridgeScene* bridgeScene = new BridgeScene("Bridge", mEngineSettings);
+    mScenes.push_back(bridgeScene);
+
+    // Fixed joint scene
+    FixedJointScene* fixedJointScene = new FixedJointScene("Fixed joint", mEngineSettings);
+    mScenes.push_back(fixedJointScene);
+
+    // Ball and Socket joint scene
+    BallAndSocketJointScene* ballAndSocketJointScene = new BallAndSocketJointScene("Ball and Socket joint", mEngineSettings);
+    mScenes.push_back(ballAndSocketJointScene);
+
+    // Hinge joint scene
+    HingeJointScene* hingeJointScene = new HingeJointScene("Hinge joint", mEngineSettings);
+    mScenes.push_back(hingeJointScene);
+
+    // Slider joint scene
+    SliderJointScene* sliderJointScene = new SliderJointScene("Slider joint", mEngineSettings);
+    mScenes.push_back(sliderJointScene);
+
+    // Ragdoll scene
+    RagdollScene* ragdollScene = new RagdollScene("Ragdoll", mEngineSettings);
+    mScenes.push_back(ragdollScene);
+
     assert(mScenes.size() > 0);
 
     const int firstSceneIndex = 0;
@@ -174,7 +235,7 @@ void TestbedApplication::updateSinglePhysicsStep() {
 void TestbedApplication::updatePhysics() {
 
     // Update the elapsed time
-    mEngineSettings.elapsedTime = mTimer.getPhysicsTime();
+    mEngineSettings.elapsedTime = mTimer.getElapsedPhysicsTime();
 
     if (mTimer.isRunning()) {
 
@@ -366,6 +427,19 @@ bool TestbedApplication::keyboard_event(int key, int scancode, int action, int m
     // Close application on escape key
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
         glfwSetWindowShouldClose(m_glfw_window, GL_TRUE);
+        return true;
+    }
+
+    // Close application on escape key
+    if (key == GLFW_KEY_P && action == GLFW_PRESS) {
+
+        if (mTimer.isRunning()) {
+            pauseSimulation();
+        }
+        else {
+           playSimulation();
+        }
+
         return true;
     }
 

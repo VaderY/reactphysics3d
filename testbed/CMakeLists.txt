@@ -91,7 +91,6 @@ set(TESTBED_SOURCES
     src/SceneDemo.h
     src/SceneDemo.cpp
     src/Timer.h
-    src/Timer.cpp
 )
 
 # Common source files
@@ -124,6 +123,12 @@ set(COMMON_SOURCES
 
 # Examples scenes source files
 set(SCENES_SOURCES
+    scenes/ballandsocketjointsnet/BallAndSocketJointsNetScene.h
+    scenes/ballandsocketjointsnet/BallAndSocketJointsNetScene.cpp
+    scenes/ballandsocketjointschain/BallAndSocketJointsChainScene.h
+    scenes/ballandsocketjointschain/BallAndSocketJointsChainScene.cpp
+    scenes/hingejointschain/HingeJointsChainScene.h
+    scenes/hingejointschain/HingeJointsChainScene.cpp
     scenes/cubes/CubesScene.h
     scenes/cubes/CubesScene.cpp
     scenes/joints/JointsScene.h
@@ -142,6 +147,20 @@ set(SCENES_SOURCES
     scenes/cubestack/CubeStackScene.cpp
     scenes/pile/PileScene.h
     scenes/pile/PileScene.cpp
+    scenes/boxtower/BoxTowerScene.h
+    scenes/boxtower/BoxTowerScene.cpp
+    scenes/bridge/BridgeScene.h
+    scenes/bridge/BridgeScene.cpp
+    scenes/fixedjoint/FixedJointScene.h
+    scenes/fixedjoint/FixedJointScene.cpp
+    scenes/ballandsocketjoint/BallAndSocketJointScene.h
+    scenes/ballandsocketjoint/BallAndSocketJointScene.cpp
+    scenes/hingejoint/HingeJointScene.h
+    scenes/hingejoint/HingeJointScene.cpp
+    scenes/sliderjoint/SliderJointScene.h
+    scenes/sliderjoint/SliderJointScene.cpp
+    scenes/ragdoll/RagdollScene.h
+    scenes/ragdoll/RagdollScene.cpp
 )
 
 # Create the executable
