@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/shapes/ConvexPolyhedronShape.h>
+#include <rp3d/collision/shapes/ConvexPolyhedronShape.h>
 
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 ConvexPolyhedronShape::ConvexPolyhedronShape(CollisionShapeName name, MemoryAllocator& allocator)

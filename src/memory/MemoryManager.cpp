@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/memory/MemoryManager.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 MemoryManager::MemoryManager(MemoryAllocator* baseAllocator, size_t initAllocatedMemory) :

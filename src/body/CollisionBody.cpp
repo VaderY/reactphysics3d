@@ -24,15 +24,15 @@
 ********************************************************************************/
 
  // Libraries
-#include <reactphysics3d/body/CollisionBody.h>
-#include <reactphysics3d/engine/PhysicsCommon.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/collision/ContactManifold.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/utils/Logger.h>
+#include <rp3d/body/CollisionBody.h>
+#include <rp3d/engine/PhysicsCommon.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/collision/ContactManifold.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/utils/Logger.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 /**

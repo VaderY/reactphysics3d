@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/CollisionDispatch.h>
+#include <rp3d/collision/narrowphase/CollisionDispatch.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 CollisionDispatch::CollisionDispatch(MemoryAllocator& allocator) : mAllocator(allocator) {

@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/memory/MemoryAllocator.h>
+#include <rp3d/memory/MemoryAllocator.h>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 /// Given a pointer to memory, this method returns the next aligned address
 /**

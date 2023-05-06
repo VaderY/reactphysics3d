@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/Entity.h>
+#include <rp3d/engine/Entity.h>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static members initialization
 const uint32 Entity::ENTITY_INDEX_BITS = 24;

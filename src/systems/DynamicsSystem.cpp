@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/DynamicsSystem.h>
-#include <reactphysics3d/body/RigidBody.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/systems/DynamicsSystem.h>
+#include <rp3d/body/RigidBody.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 DynamicsSystem::DynamicsSystem(PhysicsWorld& world, CollisionBodyComponents& collisionBodyComponents, RigidBodyComponents& rigidBodyComponents,

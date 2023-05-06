@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/shapes/ConvexShape.h>
-#include <reactphysics3d/mathematics/Vector3.h>
+#include <rp3d/collision/shapes/ConvexShape.h>
+#include <rp3d/mathematics/Vector3.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 ConvexShape::ConvexShape(CollisionShapeName name, CollisionShapeType type, MemoryAllocator& allocator, decimal margin)

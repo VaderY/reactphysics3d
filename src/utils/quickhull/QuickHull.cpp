@@ -24,21 +24,21 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/utils/quickhull/QuickHull.h>
-#include <reactphysics3d/collision/ConvexMesh.h>
-#include <reactphysics3d/collision/PolygonVertexArray.h>
-#include <reactphysics3d/collision/VertexArray.h>
-#include <reactphysics3d/containers/Map.h>
-#include <reactphysics3d/containers/Array.h>
-#include <reactphysics3d/containers/Stack.h>
-#include <reactphysics3d/containers/LinkedList.h>
-#include <reactphysics3d/containers/Set.h>
-#include <reactphysics3d/utils/Message.h>
+#include <rp3d/utils/quickhull/QuickHull.h>
+#include <rp3d/collision/ConvexMesh.h>
+#include <rp3d/collision/PolygonVertexArray.h>
+#include <rp3d/collision/VertexArray.h>
+#include <rp3d/containers/Map.h>
+#include <rp3d/containers/Array.h>
+#include <rp3d/containers/Stack.h>
+#include <rp3d/containers/LinkedList.h>
+#include <rp3d/containers/Set.h>
+#include <rp3d/utils/Message.h>
 #include <iostream>
 #include <vector>
 
 // Namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Compute the convex hull of a set of points and return the resulting convex mesh
 bool QuickHull::computeConvexHull(const VertexArray& vertexArray, PolygonVertexArray& outPolygonVertexArray,

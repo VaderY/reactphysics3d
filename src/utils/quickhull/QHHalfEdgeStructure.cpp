@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/utils/quickhull/QHHalfEdgeStructure.h>
-#include <reactphysics3d/containers/Map.h>
-#include <reactphysics3d/containers/Pair.h>
-#include <reactphysics3d/containers/containers_common.h>
+#include <rp3d/utils/quickhull/QHHalfEdgeStructure.h>
+#include <rp3d/containers/Map.h>
+#include <rp3d/containers/Pair.h>
+#include <rp3d/containers/containers_common.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Destructor
 QHHalfEdgeStructure::~QHHalfEdgeStructure() {

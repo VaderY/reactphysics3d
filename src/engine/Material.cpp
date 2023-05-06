@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/Material.h>
+#include <rp3d/engine/Material.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 Material::Material(decimal frictionCoefficient, decimal bounciness, decimal massDensity)

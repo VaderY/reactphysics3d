@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/TriangleMesh.h>
+#include <rp3d/collision/TriangleMesh.h>
 #include <vector>
-#include <reactphysics3d/utils/Message.h>
-#include <reactphysics3d/collision/TriangleVertexArray.h>
+#include <rp3d/utils/Message.h>
+#include <rp3d/collision/TriangleVertexArray.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 TriangleMesh::TriangleMesh(MemoryAllocator& allocator)

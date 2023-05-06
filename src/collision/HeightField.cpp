@@ -24,15 +24,15 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/HeightField.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/collision/shapes/TriangleShape.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/utils/Message.h>
+#include <rp3d/collision/HeightField.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/collision/shapes/TriangleShape.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/utils/Message.h>
 #include <iostream>
 #include <vector>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 HeightField::HeightField(MemoryAllocator& allocator, HalfEdgeStructure& triangleHalfEdgeStructure)

@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/systems/SolveBallAndSocketJointSystem.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/body/RigidBody.h>
+#include <rp3d/systems/SolveBallAndSocketJointSystem.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/body/RigidBody.h>
 #include <cmath>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static variables definition
 const decimal SolveBallAndSocketJointSystem::BETA = decimal(0.2);

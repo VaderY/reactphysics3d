@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/components/Components.h>
+#include <rp3d/components/Components.h>
 #include <cassert>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 Components::Components(MemoryAllocator& allocator, size_t componentDataSize, size_t alignmentMarginSize)

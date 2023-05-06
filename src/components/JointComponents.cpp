@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/components/JointComponents.h>
-#include <reactphysics3d/engine/EntityManager.h>
+#include <rp3d/components/JointComponents.h>
+#include <rp3d/engine/EntityManager.h>
 #include <cassert>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 JointComponents::JointComponents(MemoryAllocator& allocator)

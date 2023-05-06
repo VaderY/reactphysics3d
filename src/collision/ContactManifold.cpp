@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/ContactManifold.h>
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/collision/ContactManifoldInfo.h>
+#include <rp3d/collision/ContactManifold.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/collision/ContactManifoldInfo.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 ContactManifold::ContactManifold(Entity bodyEntity1, Entity bodyEntity2, Entity colliderEntity1, Entity colliderEntity2,

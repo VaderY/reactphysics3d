@@ -24,20 +24,20 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/PhysicsCommon.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
-#include <reactphysics3d/constraint/BallAndSocketJoint.h>
-#include <reactphysics3d/constraint/SliderJoint.h>
-#include <reactphysics3d/constraint/HingeJoint.h>
-#include <reactphysics3d/constraint/FixedJoint.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/engine/EventListener.h>
-#include <reactphysics3d/engine/Island.h>
-#include <reactphysics3d/collision/ContactManifold.h>
-#include <reactphysics3d/containers/Stack.h>
+#include <rp3d/engine/PhysicsCommon.h>
+#include <rp3d/engine/PhysicsWorld.h>
+#include <rp3d/constraint/BallAndSocketJoint.h>
+#include <rp3d/constraint/SliderJoint.h>
+#include <rp3d/constraint/HingeJoint.h>
+#include <rp3d/constraint/FixedJoint.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/engine/EventListener.h>
+#include <rp3d/engine/Island.h>
+#include <rp3d/collision/ContactManifold.h>
+#include <rp3d/containers/Stack.h>
 
 // Namespaces
-using namespace reactphysics3d;
+using namespace rp3d;
 using namespace std;
 
 // Static initializations

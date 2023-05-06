@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/shapes/HeightFieldShape.h>
-#include <reactphysics3d/collision/RaycastInfo.h>
-#include <reactphysics3d/utils/Profiler.h>
+#include <rp3d/collision/shapes/HeightFieldShape.h>
+#include <rp3d/collision/RaycastInfo.h>
+#include <rp3d/utils/Profiler.h>
 #include <iostream>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 /**

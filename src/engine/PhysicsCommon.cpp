@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/engine/PhysicsCommon.h>
-#include <reactphysics3d/collision/PolygonVertexArray.h>
-#include <reactphysics3d/collision/VertexArray.h>
-#include <reactphysics3d/utils/quickhull/QuickHull.h>
+#include <rp3d/engine/PhysicsCommon.h>
+#include <rp3d/collision/PolygonVertexArray.h>
+#include <rp3d/collision/VertexArray.h>
+#include <rp3d/utils/quickhull/QuickHull.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Static variables
 Logger* PhysicsCommon::mLogger = nullptr;

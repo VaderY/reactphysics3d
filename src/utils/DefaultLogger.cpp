@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/utils/DefaultLogger.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/utils/DefaultLogger.h>
+#include <rp3d/memory/MemoryManager.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 DefaultLogger::DefaultLogger(MemoryAllocator& allocator)

@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/PolygonVertexArray.h>
-#include <reactphysics3d/mathematics/Vector3.h>
+#include <rp3d/collision/PolygonVertexArray.h>
+#include <rp3d/mathematics/Vector3.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 PolygonVertexArray::PolygonVertexArray() {

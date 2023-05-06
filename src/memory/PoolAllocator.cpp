@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/memory/PoolAllocator.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/memory/PoolAllocator.h>
+#include <rp3d/memory/MemoryManager.h>
 #include <cstdlib>
 #include <cassert>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Initialization of static variables
 bool PoolAllocator::isMapSizeToHeadIndexInitialized = false;

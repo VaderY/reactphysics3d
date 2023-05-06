@@ -24,19 +24,19 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/GJK/GJKAlgorithm.h>
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/engine/OverlappingPairs.h>
-#include <reactphysics3d/collision/shapes/TriangleShape.h>
-#include <reactphysics3d/configuration.h>
-#include <reactphysics3d/utils/Profiler.h>
-#include <reactphysics3d/containers/Array.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
-#include <reactphysics3d/collision/narrowphase/GJK/VoronoiSimplex.h>
+#include <rp3d/collision/narrowphase/GJK/GJKAlgorithm.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/engine/OverlappingPairs.h>
+#include <rp3d/collision/shapes/TriangleShape.h>
+#include <rp3d/configuration.h>
+#include <rp3d/utils/Profiler.h>
+#include <rp3d/containers/Array.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/narrowphase/GJK/VoronoiSimplex.h>
 #include <cassert>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Compute a contact info if the two collision shapes collide.
 /// This method implements the Hybrid Technique for computing the penetration depth by

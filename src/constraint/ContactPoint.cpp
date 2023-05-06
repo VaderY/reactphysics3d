@@ -24,10 +24,10 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/constraint/ContactPoint.h>
-#include <reactphysics3d/collision/Collider.h>
+#include <rp3d/constraint/ContactPoint.h>
+#include <rp3d/collision/Collider.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 using namespace std;
 
 // Constructor

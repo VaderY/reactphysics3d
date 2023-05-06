@@ -24,12 +24,12 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/SphereVsSphereAlgorithm.h>
-#include <reactphysics3d/collision/shapes/SphereShape.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
+#include <rp3d/collision/narrowphase/SphereVsSphereAlgorithm.h>
+#include <rp3d/collision/shapes/SphereShape.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInfoBatch.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;  
+using namespace rp3d;  
 
 bool SphereVsSphereAlgorithm::testCollision(NarrowPhaseInfoBatch& narrowPhaseInfoBatch, uint32 batchStartIndex, uint32 batchNbItems, MemoryAllocator& /*memoryAllocator*/) {
 

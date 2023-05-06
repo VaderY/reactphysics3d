@@ -24,13 +24,13 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/memory/HeapAllocator.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/memory/HeapAllocator.h>
+#include <rp3d/memory/MemoryManager.h>
 #include <cstdlib>
 #include <cassert>
 #include <iostream>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 size_t HeapAllocator::INIT_ALLOCATED_SIZE = 5 * 1048576;    // 5 Mb
 

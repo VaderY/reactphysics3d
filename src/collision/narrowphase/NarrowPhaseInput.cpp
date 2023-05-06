@@ -24,9 +24,9 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseInput.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseInput.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 /// Constructor
 NarrowPhaseInput::NarrowPhaseInput(MemoryAllocator& allocator, OverlappingPairs& overlappingPairs)

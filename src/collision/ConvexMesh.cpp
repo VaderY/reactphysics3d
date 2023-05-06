@@ -24,16 +24,16 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/ConvexMesh.h>
-#include <reactphysics3d/memory/MemoryManager.h>
-#include <reactphysics3d/collision/PolygonVertexArray.h>
-#include <reactphysics3d/utils/DefaultLogger.h>
-#include <reactphysics3d/engine/PhysicsCommon.h>
-#include <reactphysics3d/utils/Message.h>
+#include <rp3d/collision/ConvexMesh.h>
+#include <rp3d/memory/MemoryManager.h>
+#include <rp3d/collision/PolygonVertexArray.h>
+#include <rp3d/utils/DefaultLogger.h>
+#include <rp3d/engine/PhysicsCommon.h>
+#include <rp3d/utils/Message.h>
 #include <cstdlib>
 #include <vector>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 
 // Constructor

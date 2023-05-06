@@ -24,14 +24,14 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/components/ColliderComponents.h>
-#include <reactphysics3d/engine/EntityManager.h>
-#include <reactphysics3d/collision/Collider.h>
+#include <rp3d/components/ColliderComponents.h>
+#include <rp3d/engine/EntityManager.h>
+#include <rp3d/collision/Collider.h>
 #include <cassert>
 #include <random>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 ColliderComponents::ColliderComponents(MemoryAllocator& allocator)

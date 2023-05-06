@@ -24,13 +24,13 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/mathematics/Quaternion.h>
-#include <reactphysics3d/mathematics/Vector3.h>
-#include <reactphysics3d/mathematics/Matrix3x3.h>
+#include <rp3d/mathematics/Quaternion.h>
+#include <rp3d/mathematics/Vector3.h>
+#include <rp3d/mathematics/Matrix3x3.h>
 #include <cassert>
 
 // Namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Return a quaternion constructed from Euler angles (in radians)
 Quaternion Quaternion::fromEulerAngles(decimal angleX, decimal angleY, decimal angleZ) {

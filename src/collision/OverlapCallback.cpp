@@ -24,11 +24,11 @@
 ********************************************************************************/
 
 // Libraries
-#include <reactphysics3d/collision/OverlapCallback.h>
-#include <reactphysics3d/engine/PhysicsWorld.h>
+#include <rp3d/collision/OverlapCallback.h>
+#include <rp3d/engine/PhysicsWorld.h>
 
 // We want to use the ReactPhysics3D namespace
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Contact Pair Constructor
 OverlapCallback::OverlapPair::OverlapPair(ContactPair& contactPair, PhysicsWorld& world, bool isLostOverlappingPair)

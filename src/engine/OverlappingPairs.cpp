@@ -25,14 +25,14 @@
 
 // Libraries
 #include <cassert>
-#include <reactphysics3d/engine/OverlappingPairs.h>
-#include <reactphysics3d/containers/containers_common.h>
-#include <reactphysics3d/collision/ContactPointInfo.h>
-#include <reactphysics3d/collision/narrowphase/NarrowPhaseAlgorithm.h>
-#include <reactphysics3d/collision/narrowphase/CollisionDispatch.h>
-#include <reactphysics3d/memory/MemoryManager.h>
+#include <rp3d/engine/OverlappingPairs.h>
+#include <rp3d/containers/containers_common.h>
+#include <rp3d/collision/ContactPointInfo.h>
+#include <rp3d/collision/narrowphase/NarrowPhaseAlgorithm.h>
+#include <rp3d/collision/narrowphase/CollisionDispatch.h>
+#include <rp3d/memory/MemoryManager.h>
 
-using namespace reactphysics3d;
+using namespace rp3d;
 
 // Constructor
 OverlappingPairs::OverlappingPairs(MemoryManager& memoryManager, ColliderComponents& colliderComponents,
