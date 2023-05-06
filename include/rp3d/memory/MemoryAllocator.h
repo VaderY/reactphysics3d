@@ -28,6 +28,7 @@
 
 // Libraries
 #include <cstring>
+#include <cstdint>
 #include <rp3d/configuration.h>
 
 /// ReactPhysics3D namespace
